@@ -1,3 +1,8 @@
+//HabibieNurSeptian
+//A11.2022.14829
+//4207
+//Tugas-2
+
 #include <iostream>
 using namespace std;
 bool lsearch(int Arr[], int a, int b);
