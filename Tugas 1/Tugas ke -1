@@ -1,1 +1,62 @@
+//Habibe Nur Septian
+//A11.2022.14829
+//4207
 
+
+#include <iostream>
+using namespace std;
+
+
+int penjumlahan (int a, int b){
+    int x = a + b;
+    return x;
+}
+int pengurangan (int a, int b){
+    int y = a - b;
+    return y;
+}
+int perkalian (int a, int b){
+    int z = a * b;
+    return z;
+}
+int total(int array[], int x){
+    int hasil = 0;
+    for(int i=0; i<x; i++){
+        hasil += array[i];
+    }
+    return hasil;
+}
+float rata(int array[], int x){
+    float hasil = 0;
+    for(int i=0; i<x; i++){
+    hasil += array[i];
+    }
+    return hasil /= x;
+}
+//================================//
+int main (){
+int x;
+//================================//
+    cout << "===Penjumlahan===" << endl;
+    cout << penjumlahan (6 ,5) << endl;
+    cout << "===Pengurangan===" << endl;
+    cout << pengurangan (6,5) << endl;
+    cout << "===Perkalian===" << endl;
+    cout << perkalian (6,5) << endl;
+//================================//
+    cout << "==============================" << endl;
+    cout << "Menghitung total dan rata-rata" << endl;
+    cout << "==============================" << endl;
+    cout << "Jumlah array : ";
+    cin >> x;
+    int array[x];
+    for(int i=0; i<x; i++){
+        cout << "Data array ke- ["<< i << "] = ";
+        cin >> array[i];
+    }
+    cout << "==============================" << endl;
+    cout << "Total bilangan : " << total(array,x) << endl;
+    cout << "Rata-Rata : " << rata(array,x) << endl;
+//================================//
+    return 0;
+}
