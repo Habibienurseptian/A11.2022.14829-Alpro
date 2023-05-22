@@ -30,7 +30,7 @@ void insertion_short(int arr[],int n){
 }
 
 int main(){
-    int arr_bubble[] = {5,4,3,6,2,1};
+    int arr_bubble[] = {5,4,3,2,2,1,1};
     int n = sizeof(arr_bubble)/sizeof(arr_bubble[0]);
     bubble_short(arr_bubble,n);
     cout << "=== Bubble Sort ===" << endl;
@@ -41,7 +41,7 @@ int main(){
     }
     cout << endl;
 
-    int arr_insertion[] = {5,4,3,6,2,1};
+    int arr_insertion[] = {5,4,3,2,2,1,1};
     n = sizeof(arr_insertion)/sizeof(arr_insertion[0]);
     insertion_short(arr_insertion,n);
     cout << "=== Insertion Sort ===" << endl;
