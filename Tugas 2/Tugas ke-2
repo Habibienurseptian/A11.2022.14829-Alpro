@@ -1,1 +1,111 @@
+#include <iostream>
+using namespace std;
+bool lsearch(int Arr[], int a, int b);
+ bool isEvenorOdd(int x) {
+    return ((x % 2) == 0);
+}
+void isFactors(int n)
+{
+    for (int i = 1; i <= n; i++)
+        if (n % i == 0)
+            cout <<" " << i;
+}
+int FindMax(int a[], int n)
+{
+    int i, max;
+    max = a[0];
+    for (i = 1; i < n; i++)
+    {
+        if (a[i] > max)
+            max = a[i];
+    }
+    return max;
+}
 
+int FindMin(int a[], int n)
+{
+    int i, min;
+    min = a[0];
+    for (i = 1; i < n; i++)
+    {
+        if (a[i] < min)
+            min = a[i];
+    }
+    return min;
+}
+
+bool lsearch(int Arr[], int a, int b)
+{
+	for(int I=0; I<a; I++)
+	{
+		if(Arr[I]==b)
+			return true;
+	}
+	return false;
+}
+
+
+void SwapN(int a, int b) {
+   int t = a;
+   a = b;
+   b = t;
+   cout << "Nomor a : " << a << endl;
+   cout << "Nomor b : " << b;
+}
+
+int main()
+{
+cout << "=====================================" << endl;
+    int x;
+    cout << "Masukan Nomor: ";
+    cin >> x;
+    if(x % 2 == 0)
+        cout << x << " adalah genap." << endl;
+    else
+        cout << x << " adalah ganjil." << endl;
+cout << "=====================================" << endl;
+    int n;
+    cout <<"Masukan bilangan faktor: ";
+    cin >> n;
+    isFactors(n);
+cout << endl << "=====================================" << endl;
+    int i, array[100], size, max, min;
+
+    cout << "Masukan data array : "; cin >> size;
+
+    cout << "Masukan " << size << " Array\n";
+    for (i = 0; i < size; i++)
+        cin >> array[i];
+
+    max = FindMax(array, size);
+    min = FindMin(array, size);
+cout << "=====================================" << endl;
+    cout << "Max array: " << max << "\n";
+    cout << "Min array: " << min << "\n";
+cout << "=====================================" << endl;
+    int Arr[100],s,t;
+	bool found;
+	cout<<"Masukan jumlah array :  ";
+	cin>>s;
+	for(int i=0;i<s;i++)
+	{
+		cout<<"Masukan array ["<<i+1<<"] : ";
+		cin>>Arr[i];
+	}
+cout << "=====================================" << endl;
+	cout<<"Masukan array yang dicari :  ";
+	cin>>t;
+	found=lsearch(Arr,s,t);
+	if(found)
+		cout<<"\nArray ditemukan";
+	else
+		cout<<"\nArray tidak ditemukan";
+cout << "\n=====================================" << endl;
+    int a, b;
+    cout << "Masukan nomor a : "; cin >> a;
+    cout << "Masukan nomor b : "; cin >> b;
+    SwapN(a, b);
+cout << "\n=====================================";
+   return 0;
+
+}
