@@ -1,0 +1,32 @@
+//Habibe Nur Septian
+//A11.2022.14829/4207
+
+#include <iostream>
+
+using namespace std;
+
+enum mobil {
+    Toyota = 400,
+    Honda = 300,
+    Supra = 20,
+    Lamboghini = 30,
+    Ferrari = 40,
+    Bugati = 10,
+    Daihatsu = 200
+    };
+
+int main(){
+
+    mobil var1;
+
+    var1 = Daihatsu;
+    cout << var1 << endl;
+
+    var1 = Bugati;
+    cout << var1 << endl;
+
+    var1 = Toyota;
+    cout << var1 << endl;
+
+  return 0;
+}
